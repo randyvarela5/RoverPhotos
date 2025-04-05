@@ -1,14 +1,13 @@
-# 📱 Project Title
-
-> Short, punchy description of the app in one sentence.
+# 📱 Rover Photo
+> Select a Mars rover, a date, and see a picture of what Mars looked like on that day!
 
 ---
 
 ## 🧠 About
 
-[Project Title] is an iOS app built with [UIKit / SwiftUI] that [briefly explain what it does — fetches data, displays content, uses maps, etc.].
+Rover Photo is an iOS app built with UIKit that leverages a NASA API to display photos of any three rovers: Spirit, Opportunity, and Curiosity.  The user gets to select a date and an image taken from the selected rover on the given date.
 
-It was originally created as [interview project / learning project / passion project] and demonstrates key iOS development skills including [list a few: networking, table views, MapKit, etc.].
+It was originally created as learning project and demonstrates key iOS development skills including networking, decoding data, and autolayout.
 
 ---
 
@@ -30,12 +29,10 @@ It was originally created as [interview project / learning project / passion pro
 ## ⚙️ Tech Stack
 
 - Swift
-- [UIKit / SwiftUI]
-- MapKit
-- WebKit
+- UIKit
 - URLSession / JSON Decoding
 - Auto Layout
-- [Other tools or APIs]
+- NASA API: https://api.nasa.gov/
 
 ---
 
