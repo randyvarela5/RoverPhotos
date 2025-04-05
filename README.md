@@ -13,7 +13,8 @@ It was originally created as learning project and demonstrates key iOS developme
 
 ## 🖼️ Screenshots
 
-> *(Include screenshots or GIFs of the app UI if possible)*
+![Rover Photo default screen](defaultScreen-portrait.png) ![Rover Photo image screen](imageScreen-portrait.png)
+
 
 ---
 
