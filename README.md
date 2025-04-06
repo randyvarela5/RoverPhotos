@@ -13,17 +13,9 @@ It was originally created as learning project and demonstrates key iOS developme
 
 ## 🖼️ Screenshots
 
-![Rover Photo default screen](defaultScreen-portrait.png) ![Rover Photo image screen](imageScreen-portrait.png)
+![Rover Photo default screen](defaultScreen.png) ![Rover Photo image screen](imageScreen.png)
 
 
----
-
-## 🛠 Features
-
-- [Feature 1 — e.g., Displays a list of restaurants in a table view]
-- [Feature 2 — e.g., Tap to view restaurant on a map]
-- [Feature 3 — e.g., View social media handles and store hours]
-- [Feature 4 — e.g., Load company website in a WebView]
 
 ---
 
