@@ -16,14 +16,19 @@ class ViewController: UIViewController, RoverManagerDelegate {
     @IBOutlet weak var findImageBtn: UIButton!
     @IBOutlet weak var roverPopUpBtn: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var aboutBtn: UIButton!
+    @IBOutlet weak var greetingLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         roverManager.delegate = self
         
-        findImageBtn.layer.cornerRadius = 25.0
+        findImageBtn.layer.cornerRadius = 10.0
+        aboutBtn.layer.cornerRadius = 10.0
         roverPopUpBtn.configuration?.title = "Select a Rover"
+        greetingLabel.layer.cornerRadius = 10.0
+        greetingLabel.layer.borderColor = UIColor.white.cgColor
         
         roverPopUpBtn.menu = UIMenu(children: [
             UIAction(title: "Curiosity", handler: { [weak self] _ in
