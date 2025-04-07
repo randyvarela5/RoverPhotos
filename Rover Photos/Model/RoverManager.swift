@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 protocol RoverManagerDelegate {
     func fetchSelectedRover() -> String
     func fetchSelectedDate() -> String
@@ -16,15 +15,10 @@ protocol RoverManagerDelegate {
 }
 
 class RoverManager {
-    
     var delegate: RoverManagerDelegate?
     var selectedRover: String = ""
     
-    //TODO: roverURL and earthDateURL will eventually not be hard coded strings
-    //Full Sample url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=PyyAhi50PEAnBZU9C5F2uhc6800rXWUkcb2UlsAq"
-    
     func buildUrl() -> URL? {
-        
         guard let selectedRover = delegate?.fetchSelectedRover(),
               let selectedDate = delegate?.fetchSelectedDate() else {
             print("Delegate method not available")
@@ -32,10 +26,7 @@ class RoverManager {
         }
         
         let url = "https://api.nasa.gov/mars-photos/api/v1/rovers/\(selectedRover)/photos?earth_date=\(selectedDate)&api_key=PyyAhi50PEAnBZU9C5F2uhc6800rXWUkcb2UlsAq"
-        
-        print("Raw date selected is: \(selectedDate)") // 2018-08-16 03:56:00 +0000 15 chars
-        print("the constructed URL is: \(url)")
-        
+
         return URL(string: url)!
     }
     
@@ -65,8 +56,6 @@ class RoverManager {
     func updateSelectedRover() -> String {
         if let rover = delegate?.fetchSelectedRover() {
             selectedRover = rover
-            print("The selected rover is: \(selectedRover)")
-            
         }
         return selectedRover
     }
