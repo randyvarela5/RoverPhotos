@@ -19,3 +19,6 @@ DerivedData/
 *.ipa
 *.dSYM.zip
 *.dSYM
+
+# API keys and secrets
+Rover Photos/Model/APIConstants.swift

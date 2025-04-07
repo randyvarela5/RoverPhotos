@@ -25,7 +25,8 @@ class RoverManager {
             return nil
         }
         
-        let url = "https://api.nasa.gov/mars-photos/api/v1/rovers/\(selectedRover)/photos?earth_date=\(selectedDate)&api_key=PyyAhi50PEAnBZU9C5F2uhc6800rXWUkcb2UlsAq"
+        let apiKey = APIConstants.nasaAPIKey
+        let url = "https://api.nasa.gov/mars-photos/api/v1/rovers/\(selectedRover)/photos?earth_date=\(selectedDate)&api_key=\(apiKey)"
 
         return URL(string: url)!
     }
