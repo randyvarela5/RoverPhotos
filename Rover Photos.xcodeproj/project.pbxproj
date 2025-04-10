@@ -108,12 +108,21 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		E298FD582DA57ABD00CBDF0C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E298FD522DA38F8400CBDF0C /* DateUtils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E2A5A3DA2D96537000E6917D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				E2A292012D96F7FE006861F9 /* RoverData.swift */,
 				E2A292032D9718EC006861F9 /* RoverManager.swift */,
 				E298FD542DA4268400CBDF0C /* APIConstants.swift */,
+				E298FD502DA3426300CBDF0C /* RoverImageFetcher.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,7 +130,7 @@
 		E2A5A3DB2D96537800E6917D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E298FD522DA38F8400CBDF0C /* DateUtils.swift */,
+				E2FCF6922D944A0A00443B0F /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,7 +141,6 @@
 				E2FCF6902D944A0A00443B0F /* ViewController.swift */,
 				E2A291FD2D96CB60006861F9 /* AboutVC.swift */,
 				E298FD4E2DA33A6400CBDF0C /* ViewConfig.swift */,
-				E298FD502DA3426300CBDF0C /* RoverImageFetcher.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,9 +167,9 @@
 				E2A5A3DA2D96537000E6917D /* Model */,
 				E2A5A3DB2D96537800E6917D /* View */,
 				E2A5A3DC2D96538800E6917D /* Controller */,
+				E298FD582DA57ABD00CBDF0C /* Helpers */,
 				E2FCF68C2D944A0A00443B0F /* AppDelegate.swift */,
 				E2FCF68E2D944A0A00443B0F /* SceneDelegate.swift */,
-				E2FCF6922D944A0A00443B0F /* Main.storyboard */,
 				E2FCF6982D944A0C00443B0F /* Assets.xcassets */,
 				E2FCF69A2D944A0C00443B0F /* LaunchScreen.storyboard */,
 				E2FCF69D2D944A0C00443B0F /* Info.plist */,
