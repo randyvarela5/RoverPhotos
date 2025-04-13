@@ -9,6 +9,19 @@ Rover Photo is an iOS app built with UIKit that leverages a NASA API to display 
 
 It was originally created as learning project and demonstrates key iOS development skills including networking, decoding data, and autolayout.
 
+--Rover States--
+Curiosity:
+Landed: August 6, 2012
+Status: Active
+
+Spirit
+Landed: January 4, 2004
+Status: Mission ended March 2010 (stuck in sand, lost contact)
+
+Opportunity
+Landed: January 25, 2004
+Status: Missin ended June 2018 (dust storm, declared dead in Feb 2019)
+
 ---
 
 ## 🖼️ Screenshots
