@@ -23,6 +23,7 @@ class ViewController: UIViewController, RoverManagerDelegate {
         super.viewDidLoad()
         roverManager.delegate = self
         configureUI()
+        roverPopUpBtn.setTitle("Select a Rover", for: .normal)
     }
     
     @IBAction func findImageBtnPressed(_ sender: Any) {

@@ -28,6 +28,7 @@ extension ViewController {
     }
     
     private func createRoverMenu() -> UIMenu {
+        roverPopUpBtn.layer.cornerRadius = 10.0
         return UIMenu(children: [
             UIAction(title: "Curiosity", handler: { [weak self] _ in
                 self?.handleRoverSelection("Curiosity")
