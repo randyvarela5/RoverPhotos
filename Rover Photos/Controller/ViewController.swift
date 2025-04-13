@@ -28,6 +28,9 @@ class ViewController: UIViewController, RoverManagerDelegate {
     
     @IBAction func findImageBtnPressed(_ sender: Any) {
         roverManager.performRequest()
+        //Move this to config
+        roverImage.layer.borderWidth = 5
+        roverImage.layer.borderColor = UIColor.white.cgColor
     }
     
     @IBAction func aboutBtnPressed(_ sender: Any) {
