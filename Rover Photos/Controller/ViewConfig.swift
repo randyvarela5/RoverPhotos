@@ -47,4 +47,21 @@ extension ViewController {
         roverPopUpBtn.setTitle(rover, for: .normal)
         print("\(rover) selected from the pop up button")
     }
+    
+    func updateImageUI() {
+        roverImage.layer.borderWidth = 5
+        roverImage.layer.borderColor = UIColor.white.cgColor
+        roverImage.layer.cornerRadius = 10.0
+    }
+    
+    func updateDatePickerRange() {
+        if roverPopUpBtn.titleLabel?.text == "Curiosity" {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            
+            if let minDate = dateFormatter.date(from: "2012-08-06") {
+                datePicker.minimumDate = minDate
+            }
+        }
+    }
 }

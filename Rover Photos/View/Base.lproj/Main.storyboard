@@ -100,7 +100,7 @@
                                     <constraint firstAttribute="height" constant="46" id="bMb-vj-b1E"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newRover" translatesAutoresizingMaskIntoConstraints="NO" id="jGn-pa-SSZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newRover" translatesAutoresizingMaskIntoConstraints="NO" id="jGn-pa-SSZ">
                                 <rect key="frame" x="33" y="320" width="349" height="316"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="316" id="Gqx-Jz-z3B"/>

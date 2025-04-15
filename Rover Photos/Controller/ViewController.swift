@@ -25,12 +25,11 @@ class ViewController: UIViewController, RoverManagerDelegate {
         configureUI()
         roverPopUpBtn.setTitle("Select a Rover", for: .normal)
     }
+
     
     @IBAction func findImageBtnPressed(_ sender: Any) {
         roverManager.performRequest()
-        //Move this to config
-        roverImage.layer.borderWidth = 5
-        roverImage.layer.borderColor = UIColor.white.cgColor
+        updateImageUI()
     }
     
     @IBAction func aboutBtnPressed(_ sender: Any) {
@@ -41,6 +40,7 @@ class ViewController: UIViewController, RoverManagerDelegate {
     
     func fetchSelectedRover() -> String {
         currentRover = (roverPopUpBtn.titleLabel?.text)!
+        updateDatePickerRange()
         return currentRover
     }
     
