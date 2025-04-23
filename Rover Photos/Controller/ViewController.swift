@@ -27,9 +27,6 @@ class ViewController: UIViewController, RoverManagerDelegate {
         roverPopUpBtn.menu = createRoverMenu()
         roverPopUpBtn.showsMenuAsPrimaryAction = true
     }
-    @IBAction func roverPickerPressed(_ sender: Any) {
-    }
-    
     
     @IBAction func findImageBtnPressed(_ sender: Any) {
         roverManager.performRequest()

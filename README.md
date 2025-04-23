@@ -20,7 +20,7 @@ Status: Mission ended March 2010 (stuck in sand, lost contact)
 
 Opportunity
 Landed: January 25, 2004
-Status: Missin ended June 2018 (dust storm, declared dead in Feb 2019)
+Status: Mission ended June 2018 (dust storm, declared dead in Feb 2019)
 
 ---
 

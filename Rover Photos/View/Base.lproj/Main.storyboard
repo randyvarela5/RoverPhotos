@@ -126,9 +126,6 @@
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" red="0.9529411793" green="0.94117647410000005" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="roverPickerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOH-cT-l74"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
