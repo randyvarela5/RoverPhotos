@@ -23,6 +23,7 @@
 		E2810DD82DA24A3000BC5260 /* RobotoMono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DC02DA24A3000BC5260 /* RobotoMono-Light.ttf */; };
 		E2810DD92DA24A3000BC5260 /* RobotoMono-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DBB2DA24A3000BC5260 /* RobotoMono-BoldItalic.ttf */; };
 		E2810DDA2DA24A3000BC5260 /* RobotoMono-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DC12DA24A3000BC5260 /* RobotoMono-LightItalic.ttf */; };
+		E297A7672DB9B01800BCBED3 /* DatePickerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297A7662DB9B01800BCBED3 /* DatePickerConfig.swift */; };
 		E298FD4F2DA33A6400CBDF0C /* ViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298FD4E2DA33A6400CBDF0C /* ViewConfig.swift */; };
 		E298FD512DA3426300CBDF0C /* RoverImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298FD502DA3426300CBDF0C /* RoverImageFetcher.swift */; };
 		E298FD532DA38F8400CBDF0C /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298FD522DA38F8400CBDF0C /* DateUtils.swift */; };
@@ -56,6 +57,7 @@
 		E2810DC72DA24A3000BC5260 /* RobotoMono-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Thin.ttf"; sourceTree = "<group>"; };
 		E2810DC82DA24A3000BC5260 /* RobotoMono-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-ThinItalic.ttf"; sourceTree = "<group>"; };
 		E2810DC92DA24A3000BC5260 /* RobotoMono-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		E297A7662DB9B01800BCBED3 /* DatePickerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerConfig.swift; sourceTree = "<group>"; };
 		E298FD4E2DA33A6400CBDF0C /* ViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfig.swift; sourceTree = "<group>"; };
 		E298FD502DA3426300CBDF0C /* RoverImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverImageFetcher.swift; sourceTree = "<group>"; };
 		E298FD522DA38F8400CBDF0C /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				E2FCF6902D944A0A00443B0F /* ViewController.swift */,
 				E2A291FD2D96CB60006861F9 /* AboutVC.swift */,
 				E298FD4E2DA33A6400CBDF0C /* ViewConfig.swift */,
+				E297A7662DB9B01800BCBED3 /* DatePickerConfig.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				E2A292022D96F7FE006861F9 /* RoverData.swift in Sources */,
 				E298FD552DA4268400CBDF0C /* APIConstants.swift in Sources */,
 				E2FCF6912D944A0A00443B0F /* ViewController.swift in Sources */,
+				E297A7672DB9B01800BCBED3 /* DatePickerConfig.swift in Sources */,
 				E2A292042D9718EC006861F9 /* RoverManager.swift in Sources */,
 				E2A291FE2D96CB60006861F9 /* AboutVC.swift in Sources */,
 				E298FD532DA38F8400CBDF0C /* DateUtils.swift in Sources */,
