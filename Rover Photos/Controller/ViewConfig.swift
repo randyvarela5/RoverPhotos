@@ -27,19 +27,22 @@ extension ViewController {
         roverPopUpBtn.menu = createRoverMenu()
     }
     
-    private func createRoverMenu() -> UIMenu {
+    func createRoverMenu() -> UIMenu {
         roverPopUpBtn.layer.cornerRadius = 10.0
-        return UIMenu(children: [
-            UIAction(title: "Curiosity", handler: { [weak self] _ in
-                self?.handleRoverSelection("Curiosity")
-            }),
-            UIAction(title: "Opportunity", handler: { [weak self] _ in
-                self?.handleRoverSelection("Opportunity")
-            }),
-            UIAction(title: "Spirit", handler: { [weak self] _ in
-                self?.handleRoverSelection("Spirit")
-            })
-        ])
+        let curiosityAction = UIAction(title: "Curiosity") {_ in
+            self.roverPopUpBtn.setTitle("Curiosity", for: .normal)
+            self.updateDatePickerRange()
+        }
+        let opportunityAction = UIAction(title: "Opportunity") {_ in
+            self.roverPopUpBtn.setTitle("Opportunity", for: .normal)
+            self.updateDatePickerRange()
+        }
+        let spiritAction = UIAction(title: "Spirit") {_ in
+            self.roverPopUpBtn.setTitle("Spirit", for: .normal)
+            self.updateDatePickerRange()
+        }
+        
+        return UIMenu(children: [curiosityAction, opportunityAction, spiritAction])
     }
     
     private func handleRoverSelection(_ rover: String) {
@@ -55,11 +58,28 @@ extension ViewController {
     }
     
     func updateDatePickerRange() {
+        print("Date picker range updated")
         if roverPopUpBtn.titleLabel?.text == "Curiosity" {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
             
             if let minDate = dateFormatter.date(from: "2012-08-06") {
+                datePicker.minimumDate = minDate
+            }
+        }
+        if roverPopUpBtn.titleLabel?.text == "Opportunity" {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            
+            if let minDate = dateFormatter.date(from: "2004-01-25") {
+                datePicker.minimumDate = minDate
+            }
+        }
+        if roverPopUpBtn.titleLabel?.text == "Spirit" {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            
+            if let minDate = dateFormatter.date(from: "2004-01-04") {
                 datePicker.minimumDate = minDate
             }
         }

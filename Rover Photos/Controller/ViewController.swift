@@ -24,8 +24,12 @@ class ViewController: UIViewController, RoverManagerDelegate {
         roverManager.delegate = self
         configureUI()
         roverPopUpBtn.setTitle("Select a Rover", for: .normal)
+        roverPopUpBtn.menu = createRoverMenu()
+        roverPopUpBtn.showsMenuAsPrimaryAction = true
     }
-
+    @IBAction func roverPickerPressed(_ sender: Any) {
+    }
+    
     
     @IBAction func findImageBtnPressed(_ sender: Any) {
         roverManager.performRequest()
@@ -40,7 +44,6 @@ class ViewController: UIViewController, RoverManagerDelegate {
     
     func fetchSelectedRover() -> String {
         currentRover = (roverPopUpBtn.titleLabel?.text)!
-        updateDatePickerRange()
         return currentRover
     }
     
