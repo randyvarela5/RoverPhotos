@@ -18,6 +18,7 @@ class ViewController: UIViewController, RoverManagerDelegate {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var aboutBtn: UIButton!
     @IBOutlet weak var greetingLabel: UILabel!
+    @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +30,13 @@ class ViewController: UIViewController, RoverManagerDelegate {
     }
     
     @IBAction func findImageBtnPressed(_ sender: Any) {
-        roverManager.performRequest()
-        updateImageUI()
+        activitySpinner.startAnimating()
+        roverManager.performRequest { [weak self] in
+            DispatchQueue.main.async {
+                self?.updateImageUI()
+                self?.activitySpinner.stopAnimating()
+            }
+        }
     }
     
     @IBAction func aboutBtnPressed(_ sender: Any) {

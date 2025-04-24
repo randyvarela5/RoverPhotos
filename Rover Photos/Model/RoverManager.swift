@@ -27,11 +27,11 @@ class RoverManager {
         
         let apiKey = APIConstants.nasaAPIKey
         let url = "https://api.nasa.gov/mars-photos/api/v1/rovers/\(selectedRover)/photos?earth_date=\(selectedDate)&api_key=\(apiKey)"
-
+        
         return URL(string: url)!
     }
     
-    func performRequest() {
+    func performRequest(completion: @escaping () -> Void) {
         guard let url = buildUrl() else {
             print("Unable to build URL")
             return
@@ -47,11 +47,21 @@ class RoverManager {
                 if let imageURL = self.parseJson(safeData) {
                     DispatchQueue.main.async {
                         self.delegate?.didUpdateRoverImage(imageURL: imageURL)
+                        completion()
                     }
+                } else {
+                    DispatchQueue.main.async {
+                        completion()
+                    }
+                }
+            } else {
+                DispatchQueue.main.async {
+                    completion()
                 }
             }
         }
         task.resume()
+        
     }
     
     func updateSelectedRover() -> String {

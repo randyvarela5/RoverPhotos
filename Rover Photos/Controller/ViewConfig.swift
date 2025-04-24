@@ -55,5 +55,10 @@ extension ViewController {
         roverImage.layer.borderWidth = 5
         roverImage.layer.borderColor = UIColor.white.cgColor
         roverImage.layer.cornerRadius = 10.0
+        roverImage.image = UIImage(named: "")
+        
+        if roverImage.image != UIImage(named: "") {
+            activitySpinner.stopAnimating()
+        }
     }
 }

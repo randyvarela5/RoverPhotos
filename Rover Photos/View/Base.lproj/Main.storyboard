@@ -161,6 +161,10 @@
                                     <constraint firstItem="iiS-AG-FVF" firstAttribute="top" secondItem="tOz-DS-CMw" secondAttribute="top" id="hEu-7W-7KV"/>
                                 </constraints>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="cfp-zc-oYs">
+                                <rect key="frame" x="25" y="112" width="84" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.93333333333333335" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -191,6 +195,7 @@
                     </view>
                     <connections>
                         <outlet property="aboutBtn" destination="f01-6j-0x8" id="2yy-UN-86F"/>
+                        <outlet property="activitySpinner" destination="cfp-zc-oYs" id="XgL-PC-CAb"/>
                         <outlet property="datePicker" destination="mWv-JI-KVh" id="ukS-kl-YfO"/>
                         <outlet property="findImageBtn" destination="x1E-kx-kYj" id="5YR-g8-nl2"/>
                         <outlet property="greetingLabel" destination="XV5-jm-5Go" id="QiO-WK-Fwd"/>
