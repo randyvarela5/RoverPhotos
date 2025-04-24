@@ -30,11 +30,13 @@ class ViewController: UIViewController, RoverManagerDelegate {
     }
     
     @IBAction func findImageBtnPressed(_ sender: Any) {
+        activitySpinner.isHidden = false
         activitySpinner.startAnimating()
         roverManager.performRequest { [weak self] in
             DispatchQueue.main.async {
                 self?.updateImageUI()
                 self?.activitySpinner.stopAnimating()
+                self?.activitySpinner.hidesWhenStopped = true
             }
         }
     }

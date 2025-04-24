@@ -20,6 +20,7 @@ extension ViewController {
         aboutBtn.layer.cornerRadius = 10.0
         greetingLabel.layer.cornerRadius = 10.0
         greetingLabel.layer.borderColor = UIColor.white.cgColor
+        activitySpinner.isHidden = true
     }
     
     func configureRoverMenu() {
