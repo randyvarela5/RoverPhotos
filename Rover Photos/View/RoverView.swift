@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct RoverView: View {
+    
+    @State var selectedRover : String = "Select Rover"
+    @State var isPickerShowing : Bool = false
+    
+    let rovers = ["Curiosity", "Opportunity", "Spirit"]
+    
     var body: some View {
         ZStack{
             Image("bg")
@@ -46,25 +52,32 @@ struct RoverView: View {
                     .frame(width: 350, height: 315)
                 
                 HStack{
-                    Button {
-                        print("Rover button pushed")
-                    } label: {
-                        Text("Select Rover")
-                            .frame(width: 160, height: 50)
-                            .background(Color(.orange))
-                            .foregroundStyle(.white)
-                            .font(.custom("Roboto-Mono", size: 24))
+                    Button(action: {
+                        isPickerShowing = true
+                    }) {
+                        HStack{
+                            Text(selectedRover)
+                                .font(.system(size: 20, weight: .semibold))
+                                .foregroundStyle(.white)
+                            
+                            //Spacer()
+                            Image("downarrow")
+                                .font(.system(size: 16, weight: .bold))
+                        }
+                        .padding()
+                        .frame(width: 200, height: 50)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color(UIColor(_colorLiteralRed: 277/255, green: 131/255, blue: 67/255, alpha: 1.0)))
+                        )
                     }
-                    Button {
-                        print("Date button pushed")
-                    } label: {
-                        Text("Select Date")
-                            .frame(width: 160, height: 50)
-                            .background(Color(.orange))
-                            .foregroundStyle(.white)
-                            .font(.custom("Roboto-Mono", size: 24))
+                    .confirmationDialog("Select Rover", isPresented: $isPickerShowing, titleVisibility: .hidden) {
+                        ForEach(rovers, id:\.self) { rover in
+                            Button(rover) {
+                                selectedRover = rover
+                            }
+                        }
                     }
-
                 }
                 Spacer()
             }
