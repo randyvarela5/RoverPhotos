@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21828E52DCBCC28000F97FE /* RoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21828E42DCBCC28000F97FE /* RoverView.swift */; };
 		E2810DCB2DA24A3000BC5260 /* RobotoMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DBA2DA24A3000BC5260 /* RobotoMono-Bold.ttf */; };
 		E2810DCC2DA24A3000BC5260 /* RobotoMono-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DC62DA24A3000BC5260 /* RobotoMono-SemiBoldItalic.ttf */; };
 		E2810DCD2DA24A3000BC5260 /* RobotoMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DBE2DA24A3000BC5260 /* RobotoMono-Italic.ttf */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E21828E42DCBCC28000F97FE /* RoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverView.swift; sourceTree = "<group>"; };
 		E2810DBA2DA24A3000BC5260 /* RobotoMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Bold.ttf"; sourceTree = "<group>"; };
 		E2810DBB2DA24A3000BC5260 /* RobotoMono-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-BoldItalic.ttf"; sourceTree = "<group>"; };
 		E2810DBC2DA24A3000BC5260 /* RobotoMono-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				E2FCF6922D944A0A00443B0F /* Main.storyboard */,
+				E21828E42DCBCC28000F97FE /* RoverView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				E2FCF6912D944A0A00443B0F /* ViewController.swift in Sources */,
 				E297A7672DB9B01800BCBED3 /* DatePickerConfig.swift in Sources */,
 				E2A292042D9718EC006861F9 /* RoverManager.swift in Sources */,
+				E21828E52DCBCC28000F97FE /* RoverView.swift in Sources */,
 				E2A291FE2D96CB60006861F9 /* AboutVC.swift in Sources */,
 				E298FD532DA38F8400CBDF0C /* DateUtils.swift in Sources */,
 				E298FD512DA3426300CBDF0C /* RoverImageFetcher.swift in Sources */,
