@@ -9,8 +9,8 @@ import SwiftUI
 
 struct RoverView: View {
     
-    @State var selectedRover : String = "Select Rover"
-    @State var selectDate : String = "Select Date"
+    @State var selectedRover : String = "SELECT ROVER"
+    @State var selectDate : String = "SELECT DATE"
     @State var isPickerShowing : Bool = false
     @State var isDatepickerShowing : Bool = false
     @State var selectedDate = Date()
@@ -33,16 +33,20 @@ struct RoverView: View {
                 
                 Text("Hi there! Select a rover and date to see an actual image from the NASA Rover. Then download or share it with a friend. Have fun!")
                     .foregroundColor(.white)
-                    .frame(width: 250, height: 70, alignment: .center)
+                    .frame(width: 300, height: 70, alignment: .center)
                     .multilineTextAlignment(.center)
-                    .lineLimit(4)
-                    .font(.custom("Roboto-Mono", size: 15))
+                    .lineLimit(3)
+                    .font(.custom("Roboto Mono", size: 11))
                     .padding(8)
-                    .background(Color(UIColor(red: 70/255, green: 58/255, blue: 41/255, alpha: 1.0)))
-                    .border(Color(.white))
-                    .cornerRadius(10)
-                    //.padding()
-                
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color(UIColor(red: 70/255, green: 58/255, blue: 41/255, alpha: 1.0)))
+                    )
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white, lineWidth: 5)
+                    }
+
                 Image("downarrow")
                     .resizable()
                     .scaledToFit()
@@ -52,24 +56,23 @@ struct RoverView: View {
                 Image("newRover")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 350, height: 315)
+                    .frame(width: 380, height: 330)
                 Spacer()
                 HStack{
                     Button(action: {
                         isPickerShowing = true
                     }) {
-                        // THis HStack has the button text and triangle only
+                        // This HStack has the button text and triangle only
                         HStack{
                             Text(selectedRover)
-                                .font(.system(size: 20, weight: .semibold))
+                                .font(.custom("Roboto Mono", size: 15))
                                 .foregroundStyle(.white)
                             
-                            //Spacer()
                             Image("downarrow")
                                 .font(.system(size: 16, weight: .bold))
                         }
                         .padding()
-                        .frame(width: 200, height: 50)
+                        .frame(width: 170, height: 50)
                         .background(
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color(UIColor(_colorLiteralRed: 277/255, green: 131/255, blue: 67/255, alpha: 1.0)))
@@ -85,10 +88,10 @@ struct RoverView: View {
                     Button(action: {
                         isDatepickerShowing = true
                     }) {
-                        // THis HStack has the button text and triangle only
+                        // This HStack has the button text and triangle only
                         HStack{
                             Text(selectDate)
-                                .font(.system(size: 20, weight: .semibold))
+                                .font(.custom("Roboto Mono", size: 15))
                                 .foregroundStyle(.white)
                             
                             //Spacer()
@@ -96,7 +99,7 @@ struct RoverView: View {
                                 .font(.system(size: 16, weight: .bold))
                         }
                         .padding()
-                        .frame(width: 200, height: 50)
+                        .frame(width: 170, height: 50)
                         .background(
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color(UIColor(_colorLiteralRed: 277/255, green: 131/255, blue: 67/255, alpha: 1.0)))
@@ -127,18 +130,31 @@ struct RoverView: View {
                 Button{
                     print("Locate Image Pressed")
                 } label: {
-                    Text("Locate Image")
+                    Text("LOCATE IMAGE")
                         .padding()
-                        .frame(width: 300, height: 50)
+                        .frame(width: 350, height: 50)
                         .background(
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color(UIColor(_colorLiteralRed: 120/255, green: 103/255, blue: 83/255, alpha: 1.0)))
                         )
                         .foregroundColor(.white)
-                        .font(.system(size: 20, weight: .semibold))
+                        .font(.custom("Roboto Mono", size: 24))
                     //TODO: adjust this, currently wrong
-                        .padding(.top, 20)
+                        .padding(.top, -20)
                 }
+                .padding(.bottom, 40)
+                
+                Button{
+                    print("about button pressed")
+                } label: {
+                    Text("ABOUT")
+                        .foregroundStyle(.white)
+                        .font(.custom("Roboto Mono", size: 12))
+                        .padding(.top, -35)
+                }
+                Text("© 2025 Developed by Randy Varela. Designed by Ben Peacock")
+                    .font(.custom("Roboto Mono", size: 8))
+                    .foregroundStyle(.orange)
             }
         }
         
