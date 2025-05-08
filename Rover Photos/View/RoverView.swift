@@ -10,7 +10,10 @@ import SwiftUI
 struct RoverView: View {
     
     @State var selectedRover : String = "Select Rover"
+    @State var selectDate : String = "Select Date"
     @State var isPickerShowing : Bool = false
+    @State var isDatepickerShowing : Bool = false
+    @State var selectedDate = Date()
     
     let rovers = ["Curiosity", "Opportunity", "Spirit"]
     
@@ -50,11 +53,12 @@ struct RoverView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 350, height: 315)
-                
+                Spacer()
                 HStack{
                     Button(action: {
                         isPickerShowing = true
                     }) {
+                        // THis HStack has the button text and triangle only
                         HStack{
                             Text(selectedRover)
                                 .font(.system(size: 20, weight: .semibold))
@@ -78,8 +82,63 @@ struct RoverView: View {
                             }
                         }
                     }
+                    Button(action: {
+                        isDatepickerShowing = true
+                    }) {
+                        // THis HStack has the button text and triangle only
+                        HStack{
+                            Text(selectDate)
+                                .font(.system(size: 20, weight: .semibold))
+                                .foregroundStyle(.white)
+                            
+                            //Spacer()
+                            Image("downarrow")
+                                .font(.system(size: 16, weight: .bold))
+                        }
+                        .padding()
+                        .frame(width: 200, height: 50)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color(UIColor(_colorLiteralRed: 277/255, green: 131/255, blue: 67/255, alpha: 1.0)))
+                        )
+                    }
+                    .sheet(isPresented: $isDatepickerShowing) {
+                        if #available(iOS 16.0, *) {
+                            VStack {
+                                DatePicker("Select Date", selection: $selectedDate, displayedComponents: [.date])
+                                    .datePickerStyle(GraphicalDatePickerStyle())
+                                    .padding()
+                                Button("Done") {
+                                    isDatepickerShowing = false
+                                }
+                                .padding()
+                                .frame(width: 200, height: 50)
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .padding()
+                            }
+                            .presentationDetents([.height(400)])
+                        }
+                    }
                 }
                 Spacer()
+             
+                Button{
+                    print("Locate Image Pressed")
+                } label: {
+                    Text("Locate Image")
+                        .padding()
+                        .frame(width: 300, height: 50)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color(UIColor(_colorLiteralRed: 120/255, green: 103/255, blue: 83/255, alpha: 1.0)))
+                        )
+                        .foregroundColor(.white)
+                        .font(.system(size: 20, weight: .semibold))
+                    //TODO: adjust this, currently wrong
+                        .padding(.top, 20)
+                }
             }
         }
         
