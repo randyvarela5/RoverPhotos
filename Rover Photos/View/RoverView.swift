@@ -152,9 +152,10 @@ struct RoverView: View {
                         .font(.custom("Roboto Mono", size: 12))
                         .padding(.top, -35)
                 }
-                Text("© 2025 Developed by Randy Varela. Designed by Ben Peacock")
-                    .font(.custom("Roboto Mono", size: 8))
-                    .foregroundStyle(.orange)
+//                Text("© 2025 Developed by Randy Varela. Designed by Ben Peacock")
+//                    .font(.custom("Roboto Mono", size: 8))
+//                    .foregroundStyle(.orange)
+//                    .padding(.top, -20)
             }
         }
         
