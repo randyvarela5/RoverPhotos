@@ -96,7 +96,6 @@ struct RoverView: View {
                                 .font(.custom("Roboto Mono", size: 15))
                                 .foregroundStyle(.white)
                             
-                            //Spacer()
                             Image("downarrow")
                                 .font(.system(size: 16, weight: .bold))
                         }
