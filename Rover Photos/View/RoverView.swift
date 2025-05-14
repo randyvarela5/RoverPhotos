@@ -28,7 +28,9 @@ struct RoverView: View {
                         .renderingMode(.original)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 200, height: 150, alignment: .center)
+                        .frame(width: 174, height: 125, alignment: .center)
+                        .padding(.bottom, 2)
+                Spacer()
                 
                 
                 Text("Hi there! Select a rover and date to see an actual image from the NASA Rover. Then download or share it with a friend. Have fun!")
