@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct LocateImageButton: View {
+    
+    @ObservedObject var viewModel: RoverPhotoViewModel
+    
     var body: some View {
         Button{
-            print("Locate Image Pressed")
+            viewModel.fetchRoverImage()
         } label: {
             Text("LOCATE IMAGE")
                 .padding()
@@ -28,6 +31,6 @@ struct LocateImageButton: View {
     }
 }
 
-#Preview {
-    LocateImageButton()
-}
+//#Preview {
+//    LocateImageButton()
+//}

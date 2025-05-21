@@ -115,7 +115,7 @@ class RoverManager {
     
     func fetchUserSelectedRoverImage(roverName: String, date: Date) -> AnyPublisher<UIImage, Error> {
         let apiKey = APIConstants.nasaAPIKey
-        guard let url = URL(string: "https://api.nasa.gov/mars-photos/api/v1/rovers/\(roverName)/photos?earth_date=\(date)&api_key=\(apiKey)") else {
+        guard let url = URL(string: "https://api.nasa.gov/mars-photos/api/v1/rovers/\(roverName)/photos?earth_date=\(date.formattedForNASA())&api_key=\(apiKey)") else {
                 return Fail(error: RoverError.invalidURL as Error).eraseToAnyPublisher()
         }
         

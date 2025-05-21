@@ -32,9 +32,18 @@ class RoverPhotoViewModel: ObservableObject {
         errorMessage = nil
         
         roverManager.fetchUserSelectedRoverImage(roverName: selectedRover, date: selectedDate)
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] completion in
+                self?.isLoading = false
+                
+                if case .failure(let error) = completion {
+                    self?.errorMessage = error.localizedDescription
+                }
+            } receiveValue: { [weak self] image in
+                self?.roverImage = image
+            }
+            .store(in: &cancellables)
     }
-    
-    
 }
 
 
