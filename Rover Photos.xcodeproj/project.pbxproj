@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		E21828E52DCBCC28000F97FE /* RoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21828E42DCBCC28000F97FE /* RoverView.swift */; };
 		E21829192DD44953000F97FE /* RoverPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21829182DD44953000F97FE /* RoverPhotoViewModel.swift */; };
+		E218291B2DDD77D6000F97FE /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218291A2DDD77D6000F97FE /* Buttons.swift */; };
+		E218291D2DDD7EEF000F97FE /* RoverPhotoLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218291C2DDD7EEF000F97FE /* RoverPhotoLogo.swift */; };
+		E218291F2DDD7F86000F97FE /* RoverGreetingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218291E2DDD7F86000F97FE /* RoverGreetingText.swift */; };
+		E21829212DDD8038000F97FE /* LocateImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21829202DDD8038000F97FE /* LocateImageButton.swift */; };
+		E21829242DDD80BA000F97FE /* AboutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21829232DDD80BA000F97FE /* AboutButton.swift */; };
+		E21829272DDD815C000F97FE /* DownArrowImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21829262DDD815C000F97FE /* DownArrowImage.swift */; };
+		E21829292DDD81CE000F97FE /* DefaultRoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21829282DDD81CE000F97FE /* DefaultRoverImage.swift */; };
+		E218292B2DDD824B000F97FE /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218292A2DDD824B000F97FE /* BackgroundImage.swift */; };
 		E2810DCB2DA24A3000BC5260 /* RobotoMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DBA2DA24A3000BC5260 /* RobotoMono-Bold.ttf */; };
 		E2810DCC2DA24A3000BC5260 /* RobotoMono-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DC62DA24A3000BC5260 /* RobotoMono-SemiBoldItalic.ttf */; };
 		E2810DCD2DA24A3000BC5260 /* RobotoMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DBE2DA24A3000BC5260 /* RobotoMono-Italic.ttf */; };
@@ -45,6 +53,14 @@
 /* Begin PBXFileReference section */
 		E21828E42DCBCC28000F97FE /* RoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverView.swift; sourceTree = "<group>"; };
 		E21829182DD44953000F97FE /* RoverPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoViewModel.swift; sourceTree = "<group>"; };
+		E218291A2DDD77D6000F97FE /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		E218291C2DDD7EEF000F97FE /* RoverPhotoLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoLogo.swift; sourceTree = "<group>"; };
+		E218291E2DDD7F86000F97FE /* RoverGreetingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverGreetingText.swift; sourceTree = "<group>"; };
+		E21829202DDD8038000F97FE /* LocateImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateImageButton.swift; sourceTree = "<group>"; };
+		E21829232DDD80BA000F97FE /* AboutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutButton.swift; sourceTree = "<group>"; };
+		E21829262DDD815C000F97FE /* DownArrowImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownArrowImage.swift; sourceTree = "<group>"; };
+		E21829282DDD81CE000F97FE /* DefaultRoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRoverImage.swift; sourceTree = "<group>"; };
+		E218292A2DDD824B000F97FE /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
 		E2810DBA2DA24A3000BC5260 /* RobotoMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Bold.ttf"; sourceTree = "<group>"; };
 		E2810DBB2DA24A3000BC5260 /* RobotoMono-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-BoldItalic.ttf"; sourceTree = "<group>"; };
 		E2810DBC2DA24A3000BC5260 /* RobotoMono-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -91,6 +107,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E21829222DDD8084000F97FE /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E218291A2DDD77D6000F97FE /* Buttons.swift */,
+				E21829202DDD8038000F97FE /* LocateImageButton.swift */,
+				E21829232DDD80BA000F97FE /* AboutButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		E21829252DDD8129000F97FE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E218291C2DDD7EEF000F97FE /* RoverPhotoLogo.swift */,
+				E21829262DDD815C000F97FE /* DownArrowImage.swift */,
+				E21829282DDD81CE000F97FE /* DefaultRoverImage.swift */,
+				E218292A2DDD824B000F97FE /* BackgroundImage.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		E2810DCA2DA24A3000BC5260 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +174,11 @@
 		E2A5A3DB2D96537800E6917D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E21829252DDD8129000F97FE /* Images */,
+				E21829222DDD8084000F97FE /* Buttons */,
 				E2FCF6922D944A0A00443B0F /* Main.storyboard */,
 				E21828E42DCBCC28000F97FE /* RoverView.swift */,
+				E218291E2DDD7F86000F97FE /* RoverGreetingText.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,18 +315,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E218291B2DDD77D6000F97FE /* Buttons.swift in Sources */,
+				E21829212DDD8038000F97FE /* LocateImageButton.swift in Sources */,
 				E21829192DD44953000F97FE /* RoverPhotoViewModel.swift in Sources */,
 				E2A292022D96F7FE006861F9 /* RoverData.swift in Sources */,
 				E298FD552DA4268400CBDF0C /* APIConstants.swift in Sources */,
+				E21829242DDD80BA000F97FE /* AboutButton.swift in Sources */,
 				E2FCF6912D944A0A00443B0F /* ViewController.swift in Sources */,
+				E218292B2DDD824B000F97FE /* BackgroundImage.swift in Sources */,
 				E297A7672DB9B01800BCBED3 /* DatePickerConfig.swift in Sources */,
 				E2A292042D9718EC006861F9 /* RoverManager.swift in Sources */,
 				E21828E52DCBCC28000F97FE /* RoverView.swift in Sources */,
+				E218291D2DDD7EEF000F97FE /* RoverPhotoLogo.swift in Sources */,
 				E2A291FE2D96CB60006861F9 /* AboutVC.swift in Sources */,
 				E298FD532DA38F8400CBDF0C /* DateUtils.swift in Sources */,
+				E21829272DDD815C000F97FE /* DownArrowImage.swift in Sources */,
 				E298FD512DA3426300CBDF0C /* RoverImageFetcher.swift in Sources */,
 				E298FD4F2DA33A6400CBDF0C /* ViewConfig.swift in Sources */,
 				E2FCF68D2D944A0A00443B0F /* AppDelegate.swift in Sources */,
+				E21829292DDD81CE000F97FE /* DefaultRoverImage.swift in Sources */,
+				E218291F2DDD7F86000F97FE /* RoverGreetingText.swift in Sources */,
 				E2FCF68F2D944A0A00443B0F /* SceneDelegate.swift in Sources */,
 				E2FCF6972D944A0A00443B0F /* Rover_Photos.xcdatamodeld in Sources */,
 			);
