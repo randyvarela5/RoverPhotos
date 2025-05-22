@@ -23,7 +23,6 @@ struct RoverView: View {
         return formatter.string(from: viewModel.selectedDate)
     }
     
-    
     var body: some View {
         ZStack{
             BackgroundImage()
@@ -43,9 +42,7 @@ struct RoverView: View {
                 } else {
                     DefaultRoverImage(isLoading: viewModel.isLoading)
                 }
-                
-                
-                
+
                 Spacer()
                 
                 Buttons(selectedRover: $viewModel.selectedRover,
@@ -72,4 +69,3 @@ extension Date {
 #Preview {
     RoverView()
 }
-
