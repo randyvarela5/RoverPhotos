@@ -56,13 +56,6 @@ struct RoverView: View {
                         .padding()
                 }
                 
-                if let errorMessage = viewModel.errorMessage {
-                    Text(errorMessage)
-                        .foregroundColor(.red)
-                        .padding()
-                        .multilineTextAlignment(.center)
-                }
-                
                 Spacer()
                 
                 Buttons(selectedRover: $viewModel.selectedRover,
