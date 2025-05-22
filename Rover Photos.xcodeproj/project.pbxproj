@@ -167,13 +167,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E2A5A3DC2D96538800E6917D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		E2FCF6802D944A0A00443B0F = {
 			isa = PBXGroup;
 			children = (
@@ -195,7 +188,6 @@
 			children = (
 				E2A5A3DA2D96537000E6917D /* Model */,
 				E2A5A3DB2D96537800E6917D /* View */,
-				E2A5A3DC2D96538800E6917D /* Controller */,
 				E298FD582DA57ABD00CBDF0C /* Helpers */,
 				E2FCF68C2D944A0A00443B0F /* AppDelegate.swift */,
 				E2FCF68E2D944A0A00443B0F /* SceneDelegate.swift */,
