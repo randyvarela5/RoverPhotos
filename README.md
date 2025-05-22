@@ -5,9 +5,12 @@
 
 ## 🧠 About
 
-Rover Photo is an iOS app built with UIKit that leverages a NASA API to display photos of any three rovers: Spirit, Opportunity, and Curiosity.  The user gets to select a date and an image taken from the selected rover on the given date.
+Rover Photo is an iOS app built with UIKit then rewritten in swiftUI that leverages a NASA API to display photos of any three rovers: Spirit, Opportunity, and Curiosity.  The user gets to select a date and an image taken from the selected rover on the given date.
 
-It was originally created as learning project and demonstrates key iOS development skills including networking, decoding data, and autolayout.
+It was originally created as learning project and demonstrates key iOS development skills including networking, decoding data, and autolayout
+
+--MAY 21 UPDATE--
+rewritten in swiftUI
 
 --Rover States--
 Curiosity:
@@ -35,9 +38,11 @@ Status: Mission ended June 2018 (dust storm, declared dead in Feb 2019)
 ## ⚙️ Tech Stack
 
 - Swift
-- UIKit
-- URLSession / JSON Decoding
-- Auto Layout
+- UIKit (refactored out for swiftUI)
+- swiftUI
+- URLSession / JSON Decoding (refactored out for swiftUI)
+- combine
+- Auto Layout (refactored out for swiftUI)
 - NASA API: https://api.nasa.gov/
 
 ---
