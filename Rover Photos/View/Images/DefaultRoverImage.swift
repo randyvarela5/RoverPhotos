@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct DefaultRoverImage: View {
+    
+    let isLoading : Bool
+    
     var body: some View {
-        Image("newRover")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 380, height: 330)
+        ZStack {
+            Image("newRover")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 380, height: 330)
+            
+            if isLoading {
+                ProgressView()
+                    .scaleEffect(1.5)
+                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
+            }
+        }
     }
 }
 
-#Preview {
-    DefaultRoverImage()
-}
+//#Preview {
+//    DefaultRoverImage()
+//}

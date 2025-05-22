@@ -11,12 +11,6 @@ struct RoverView: View {
     
     @StateObject private var viewModel = RoverPhotoViewModel()
     
-    //    @State var selectedRover : String = "SELECT ROVER"
-    //    @State var selectDate : String = "SELECT DATE"
-    //    @State var isPickerShowing : Bool = false
-    //    @State var isDatepickerShowing : Bool = false
-    //    @State var selectedDate = Date()
-    
     @State var selectDate: String = "SELECT DATE"
     @State var isPickerShowing: Bool = false
     @State var isDatepickerShowing: Bool = false
@@ -45,16 +39,12 @@ struct RoverView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                     //If rover photo renders wonky, adjust this.
-                        .frame(width: 350, height: 350)
+                        .frame(width: 380, height: 330)
                 } else {
-                    DefaultRoverImage()
+                    DefaultRoverImage(isLoading: viewModel.isLoading)
                 }
                 
-                if viewModel.isLoading {
-                    ProgressView()
-                        .scaleEffect(1.5)
-                        .padding()
-                }
+                
                 
                 Spacer()
                 
