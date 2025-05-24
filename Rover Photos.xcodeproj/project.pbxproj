@@ -17,6 +17,7 @@
 		E21829272DDD815C000F97FE /* DownArrowImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21829262DDD815C000F97FE /* DownArrowImage.swift */; };
 		E21829292DDD81CE000F97FE /* DefaultRoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21829282DDD81CE000F97FE /* DefaultRoverImage.swift */; };
 		E218292B2DDD824B000F97FE /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218292A2DDD824B000F97FE /* BackgroundImage.swift */; };
+		E218292D2DE1734D000F97FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E218292C2DE1734D000F97FE /* LaunchScreen.storyboard */; };
 		E2810DCB2DA24A3000BC5260 /* RobotoMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DBA2DA24A3000BC5260 /* RobotoMono-Bold.ttf */; };
 		E2810DCC2DA24A3000BC5260 /* RobotoMono-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DC62DA24A3000BC5260 /* RobotoMono-SemiBoldItalic.ttf */; };
 		E2810DCD2DA24A3000BC5260 /* RobotoMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2810DBE2DA24A3000BC5260 /* RobotoMono-Italic.ttf */; };
@@ -54,6 +55,7 @@
 		E21829262DDD815C000F97FE /* DownArrowImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownArrowImage.swift; sourceTree = "<group>"; };
 		E21829282DDD81CE000F97FE /* DefaultRoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRoverImage.swift; sourceTree = "<group>"; };
 		E218292A2DDD824B000F97FE /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
+		E218292C2DE1734D000F97FE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2810DBA2DA24A3000BC5260 /* RobotoMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Bold.ttf"; sourceTree = "<group>"; };
 		E2810DBB2DA24A3000BC5260 /* RobotoMono-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-BoldItalic.ttf"; sourceTree = "<group>"; };
 		E2810DBC2DA24A3000BC5260 /* RobotoMono-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		E2FCF6802D944A0A00443B0F = {
 			isa = PBXGroup;
 			children = (
+				E218292C2DE1734D000F97FE /* LaunchScreen.storyboard */,
 				E2FCF68B2D944A0A00443B0F /* Rover Photos */,
 				E2FCF68A2D944A0A00443B0F /* Products */,
 			);
@@ -266,6 +269,7 @@
 				E2810DD12DA24A3000BC5260 /* RobotoMono-MediumItalic.ttf in Resources */,
 				E2810DD22DA24A3000BC5260 /* RobotoMono-Italic-VariableFont_wght.ttf in Resources */,
 				E2810DD32DA24A3000BC5260 /* RobotoMono-Medium.ttf in Resources */,
+				E218292D2DE1734D000F97FE /* LaunchScreen.storyboard in Resources */,
 				E2810DD42DA24A3000BC5260 /* RobotoMono-ThinItalic.ttf in Resources */,
 				E2810DD52DA24A3000BC5260 /* RobotoMono-Regular.ttf in Resources */,
 				E2810DD62DA24A3000BC5260 /* RobotoMono-ExtraLight.ttf in Resources */,
