@@ -86,10 +86,12 @@ struct Buttons: View {
                         .cornerRadius(10)
                         .padding()
                     }
+                    .padding()
                     .presentationDetents([.height(400)])
                 }
             }
-        }    }
+        }
+    }
 }
 
 //#Preview {
